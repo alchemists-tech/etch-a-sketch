@@ -1,0 +1,16 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 500px;
+    height: 500px;
+    border: 8px solid gray;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.innerBox:hover {
+    background-color: green;
+}
+
