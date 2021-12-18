@@ -1,7 +1,7 @@
 .box {
     display: flex;
-    flex-direction: column;
-    flex: 1;
+    flex-wrap: wrap;
+    flex: 1 0 1;
     width: 500px;
     height: 500px;
     border: 8px solid gray;
@@ -13,4 +13,9 @@
 .innerBox:hover {
     background-color: green;
 }
+
+.innerBox {
+    border: 2px solid red;
+}
+
 
