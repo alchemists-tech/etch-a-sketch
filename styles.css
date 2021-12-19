@@ -15,9 +15,17 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex: 1 0 1;
-    width: 500px;
-    height: 500px;
+    width: 550px;
+    height: 550px;
     border: 8px solid gray;
+    border-radius: 15px;
+    margin-left: 30px;
+}
+
+button {
+    height: 25px;
+    width: 100px;
+    border: 2px solid black;
     border-radius: 15px;
 }
 
@@ -25,8 +33,5 @@ main {
     background-color: green;
 }
 
-.innerBox {
-    border: 2px solid red;
-}
 
 
