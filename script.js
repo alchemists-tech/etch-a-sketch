@@ -1,6 +1,6 @@
 let howMany = 16;
 const outerBox = document.querySelector(".box");
-const totalWidth = outerBox.scrollHeight;
+const totalWidth = outerBox.clientWidth;
 const input = document.querySelector("input");
 const button = document.querySelector("button");
 
@@ -31,9 +31,10 @@ function setTable(value) {
     for (let i = 1; i <= value * value; i++) {
 
         let innerBox = document.createElement("DIV");
-        innerBox.classList = (`innerBox${i} innerBox`);
+        innerBox.classList = (`innerBox${i}`);
         innerBox.style.width=`${totalWidth/value}px`;
         innerBox.style.height=`${totalWidth/value}px`;
+        innerBox.addEventListener('mouseover', function() { innerBox.classList.add('innerBox') })
         outerBox.appendChild(innerBox);
 
     }

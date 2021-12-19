@@ -14,9 +14,8 @@ main {
 .box {
     display: flex;
     flex-wrap: wrap;
-    flex: 1 0 1;
-    width: 550px;
-    height: 550px;
+    width: 600px;
+    height: 600px;
     border: 8px solid gray;
     border-radius: 15px;
     margin-left: 30px;
@@ -29,7 +28,7 @@ button {
     border-radius: 15px;
 }
 
-.innerBox:hover {
+.innerBox {
     background-color: green;
 }
 
