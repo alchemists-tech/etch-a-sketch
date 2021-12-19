@@ -10,7 +10,11 @@ button.addEventListener('click', function () { resetTable(input.value) } );
 
 function resetTable(value) {
 
-    if (+value) {
+    if (+value > 100 || +value < 1) {
+
+        alert("Please enter a value between 1 and 100")
+
+    } else if (+value) {
 
         outerBox.innerHTML = ''
         setTable(+value);
